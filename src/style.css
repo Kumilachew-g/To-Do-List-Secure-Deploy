@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+  font-weight: normal;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: auto;
+  display: grid;
+  box-shadow: 0 0 10px #888;
+  min-width: 42%;
+  max-width: 77%;
+}
+
+.heading {
+  display: flex;
+  padding: 16px;
+  font-size: inherit;
+  margin: 0;
+  padding-right: 25px;
+}
+
+.add-input-list {
+  border: 1px solid black;
+  font-style: italic;
+  outline: none;
+}
+
+.add-input-list,
+.remove-btn {
+  border: none;
+}
+
+.add-input-list,
+.item-container,
+.remove-btn {
+  padding: 16px;
+  border-bottom: 1px solid #b1afaf;
+  display: flex;
+}
+
+.remove-btn {
+  border: none;
+  color: #808080;
+  font-size: 15px;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.text-area {
+  display: none;
+}
+
+.active {
+  background-color: #fffed3;
+}
+
+.item-container {
+  gap: 6px;
+  justify-content: space-between;
+}
+
+.item-container textarea,
+.item-container span {
+  width: 202px;
+  flex-grow: 1;
+}
+
+.trash-btn {
+  height: 22px;
+  width: 22px;
+}
+
+.update-item {
+  display: inline;
+  font: inherit;
+  padding: 0;
+  height: 18px;
+  border: none;
+  outline: none;
+  resize: none;
+  cursor: text;
+  overflow: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b1afaf;
+  color: #b1afaf;
+}
